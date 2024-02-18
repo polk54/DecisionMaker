@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Decision Maker</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="input-section">
+                <div id="options">
+                    <input type="text" placeholder="Option 1">
+                    <input type="text" placeholder="Option 2">
+                    <input type="text" placeholder="Option 3">
+                </div>
+                <button onclick="addOption()">Add</button>
+                <button onclick="removeOption()">Remove</button>
+                <button onclick="makeDecision()" class="decision-button">Make a Decision</button>
+            </div>
+            <div id="decision-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="decision-text" id="decision"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Decision Maker. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
